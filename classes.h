@@ -10,11 +10,9 @@ void progress(int);
 
 class story {
 private:
-	string comment = "this is the begining of the game";
-	string second = "second call";
+	
 public:
-	string getComment();
-	string getSecond();
+	
 };
 
 class fights {
@@ -31,6 +29,12 @@ public:
 
 class stats {
 private:
-
+	int HP = 100;
 public:
+	int getHP();
+
+	//destructor
+	~stats();
+
+	void take_HP(int);
 };
