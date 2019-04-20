@@ -6,14 +6,18 @@
 
 Display Menu class(); //if else statement , need a loop
    Start
-      Call on classes for Forest and Dungeon class
+      If ()Call on classes for Forest and Dungeon class
    Exit
-      User decides to quit program
+      Else if()User decides to quit program
+   Wrong statement
+      Goto variable back to start statement if not choosing 1 or 2.
 Forest class ();
     Story line switch case
+    Switch ()
     Inheritance trap class
 Dungeon class ();
     Story line switch case
+    Switch ()
     Inheritance trap class
 Traps OBS Class ();
     Damage (randomize damage from 1 to 5)
@@ -30,9 +34,3 @@ Items class ();
     Items
     Weapons
     Money
-    
-      
-
-
-
-
