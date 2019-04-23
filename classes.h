@@ -6,13 +6,12 @@
 
 using namespace std;
 
-void progress(int);
-
 class story {
 private:
 	
 public:
-	
+	void progress_forest();
+	void progress_dungeon();
 };
 
 class fights {
@@ -36,5 +35,5 @@ public:
 	//destructor
 	~stats();
 
-	void take_HP(int);
+	int take_HP(int);
 };
