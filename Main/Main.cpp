@@ -3,7 +3,6 @@
 #include <string>
 #include <vector>
 #include "DisplayMenu.h"
-#include "classes.h"
 #include "Cave.h"
 #include "Forest.h"
 #include "Stats.h"
@@ -14,33 +13,11 @@ int main()
 {
 
 	int selection;
-	DisplayMenu menu;
+	DisplayMenu Display;
 	char again;
 	do {
-		cout << setw( 50 ) << cout.fill( '*' ) << endl;
-		cout << "\tPlease choose from the following\n";
-		cout << "\t\t1. Forest Adventure\n";
-		cout << "\t\t2. Cave Exploring\n";
-		cout << "\t\t3. Exit\n";
-		cout << setw( 50 ) << cout.fill( '*' ) << endl;
-		redo1:cin >> selection;
 
-		if ( selection == 1 )
-		{
-			Forest F;
-			F.Forest_Story();
-		}
-
-		else if ( selection == 2 )
-		{
-			Cave C;
-			C.Cave_Story();
-		}
-
-		else if ( selection == 3 )
-		{
-			goto exit;
-		}
+		Display.Display();
 		
 		cout << "Do you want to play again? ( Y / N )";
 		
